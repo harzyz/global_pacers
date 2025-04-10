@@ -1,159 +1,220 @@
 .hero-section {
-    background-color: #d22530;
-    padding: 50px 0;
-    position: relative;
+  background-color: #d22530;
+  padding: 50px 0;
+  position: relative;
 }
 
 .category-card {
-    background-color: white;
-    padding: 30px 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .category-title {
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #333;
-    margin: 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #333;
+  margin: 0;
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 15px;
 }
 
 .employers-section {
-    display: flex;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .image-container {
-    flex: 1;
-    position: relative;
+  flex: 1;
+  position: relative;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-wrapper {
+  height: 600px;
+  flex: 1;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .diagonal-pattern {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: repeating-linear-gradient(
-        45deg,
-        #d22530,
-        #d22530 2px,
-        transparent 2px,
-        transparent 10px
-    );
-    opacity: 0.7;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    45deg,
+    #d22530,
+    #d22530 2px,
+    transparent 2px,
+    transparent 10px
+  );
+  opacity: 0.7;
 }
 
 .pattern-top-right {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
 
 .pattern-bottom-left {
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .pattern-bottom-right {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .content-container {
-    flex: 1;
-    padding: 60px 40px;
-    background-color: #fff;
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #fff;
 }
 
 .section-title {
-    margin-bottom: 20px;
-    font-size: 42px;
-    font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .title-black {
-    color: #333;
+  color: #333;
 }
 
 .title-primary {
-    color: #d22530;
+  color: #d22530;
 }
 
 .divider {
-    width: 80px;
-    height: 3px;
-    background-color: #d22530;
-    margin-bottom: 30px;
+  width: 80px;
+  height: 3px;
+  background-color: #d22530;
+  margin: 0 auto 30px;
 }
 
 .description {
-    color: #666;
-    margin-bottom: 25px;
-    font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #d22530;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #d22530;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #d22530;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #d22530;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: transparent;
-    color: #d22530;
+  background-color: transparent;
+  color: #d22530;
+}
+
+.philosophy-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.features-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #333;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  margin-bottom: 20px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.feature-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #d22530;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 }
 
 @media (max-width: 768px) {
-    .category-card {
-        margin-bottom: 15px;
-    }
-    
-    .hero-section {
-        padding: 40px 0;
-    }
-    .employers-section {
-        flex-direction: column;
-    }
-    
-    .image-container {
-        height: 300px;
-    }
-    
-    .content-container {
-        padding: 40px 20px;
-    }
-    
-    .section-title {
-        font-size: 32px;
-    }
+  .category-card {
+    margin-bottom: 15px;
+  }
+
+  .hero-section {
+    padding: 40px 0;
+  }
+  .employers-section {
+    flex-direction: column;
+  }
+
+  .image-container {
+    height: 300px;
+  }
+
+  .content-container {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .philosophy-section {
+    padding: 50px 0;
+  }
+  .image-wrapper{
+    display: none;
+  }
 }

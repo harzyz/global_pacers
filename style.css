@@ -3013,12 +3013,12 @@ select.mobile-device {
 }
 
 .banner-bg-4{
-	background: url(uploads/post15.jpg.png);
+	background: url(images/oilandgas.jpg);
 	padding: 120px 0;	
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);
 	background-origin: initial;
-	background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: relative;

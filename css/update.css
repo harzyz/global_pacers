@@ -1,4 +1,4 @@
-*{
+* {
   scroll-behavior: smooth;
 }
 
@@ -361,23 +361,108 @@
   color: #333;
 }
 
-.box_alignment{
+.box_alignment {
   display: flex;
   align-items: center;
 }
-.box_alignment2{
+.box_alignment2 {
   display: flex;
   align-items: center;
 }
-.image_max{
+.image_max {
   max-height: 400px;
   object-fit: cover;
   object-position: top;
+}
+.section-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #666;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-content {
+  padding: 30px;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.service-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #d22530;
+}
+
+.service-description {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.service-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #d22530;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid #d22530;
+}
+
+.service-link:hover {
+  background-color: transparent;
+  color: #d22530;
 }
 
 @media (max-width: 992px) {
   .process-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-description {
+    font-size: 16px;
+    padding: 0 20px;
   }
 }
 
@@ -437,14 +522,20 @@
     max-width: 300px;
   }
 
-  .box_alignment{
+  .box_alignment {
     flex-direction: column;
   }
-  .box_alignment2{
+  .box_alignment2 {
     flex-direction: column-reverse;
   }
-  .image_max{
+  .image_max {
     max-height: 300px;
     width: 100%;
+  }
+  .service-title {
+    font-size: 22px;
+  }
+  .service-content {
+    padding: 25px 20px;
   }
 }

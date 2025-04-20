@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="./css/update.css" />
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
@@ -135,13 +136,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about-us.html">About us</a></li>
+              <li><a class="active" href="services.html">Our Services</a></li>
               <li>
-                <a
-                  href="https://apply.bizedgeapp.com/17419115798"
-                  >Jobs</a
-                >
+                <a href="https://apply.bizedgeapp.com/17419115798">Jobs</a>
               </li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -150,7 +149,7 @@
       </nav>
     </header>
 
-    <div class="banner-area banner-bg-1">
+    <!-- <div class="banner-area banner-bg-1">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -164,170 +163,83 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div id="services" class="parallax section lb">
-      <div class="container">
-        <div class="section-title text-center">
-          <h3><b> Our Services</b></h3>
+    <div class="wrapper">
+      <section class="services-section">
+        <div class="diagonal-pattern pattern-top-right"></div>
+        <div class="diagonal-pattern pattern-bottom-left"></div>
+
+        <div class="section-header">
+          <h2 class="section-title">
+            Our <span class="title-primary">Services</span>
+          </h2>
+          <div class="divider"></div>
+          <p class="section-description">
+            We offer a comprehensive range of specialized services designed to
+            meet your business needs and help you achieve your goals.
+          </p>
         </div>
-        <!-- end title -->
 
-        <div class="row">
-          <div class="col-md-3">
-            <div
-              class="card"
-              style="width: 28rem; box-shadow: 5px 5px rgb(245, 234, 234)"
-            >
-              <img
-                src="uploads/sales2.jpg.jpg"
-                class="card-img-top"
-                alt="service image"
-                style="width: 28rem"
-              />
-              <div
-                class="card-body"
-                style="
-                  background-color: white;
-                  text-align: center;
-                  padding: 0.5px;
-                "
-              >
-                <a href="service1.html"
-                  ><h3 class="card-title">
-                    <b>Tech Talent Recruitment:</b>
-                  </h3></a
-                >
-                <p class="card-text">
-                  Our expertise extends to recruiting dynamic sales
-                  professionals with a deep understanding of technology. Whether
-                  it's sales executives, account managers, or business
-                  development representatives, we excel in sourcing individuals
-                  who possess the technical acumen and strategic mindset
-                  necessary to drive revenue and forge lasting client
-                  relationships.
-                </p>
-                <br />
-              </div>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-content">
+              <h3 class="service-title">ConnectEnergi</h3>
+              <p class="service-description">
+                ConnectEnergi specializes in hiring, staffing, and workforce
+                solutions for companies in oil & gas, energy, and construction.
+              </p>
+              <a href="service3.html" class="service-link">Learn More</a>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div
-              class="card"
-              style="width: 28rem; box-shadow: 5px 5px rgb(245, 234, 234)"
-            >
-              <img
-                src="uploads/sales1.jpg.jpg.jpg"
-                class="card-img-top"
-                alt="service image"
-                style="width: 28rem"
-              />
-              <div
-                class="card-body"
-                style="
-                  background-color: white;
-                  text-align: center;
-                  padding: 5px;
-                "
-              >
-                <a href="service2.html"
-                  ><h3 class="card-title"><b>Tech Sales Recruitment:</b></h3></a
-                >
-                <p class="card-text">
-                  We specialize in identifying, attracting, and placing top-tier
-                  tech talent across various domains, including software
-                  development, data science, artificial intelligence,
-                  cybersecurity, and more. Leveraging our extensive network and
-                  rigorous screening process, we match skilled candidates with
-                  leading tech companies, ensuring a seamless fit that fosters
-                  long-term success.
-                </p>
-              </div>
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-content">
+              <h3 class="service-title">ConnectCode</h3>
+              <p class="service-description">
+                ConnectCode is our specialized service focused on recruiting
+                top-tier technical talent for our clients. This includes Tech
+                Recruitment, Tech Contract Recruitment, Tech Sales Recruitment,
+                and Remote Upskilling services.
+              </p>
+              <a href="service2.html" class="service-link">Learn More</a>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div
-              class="card"
-              style="width: 28rem; box-shadow: 5px 5px rgb(245, 234, 234)"
-            >
-              <img
-                src="uploads/sales3.png"
-                class="card-img-top"
-                alt="service image"
-                style="width: 28rem"
-              />
-              <div
-                class="card-body"
-                style="
-                  background-color: white;
-                  text-align: center;
-                  padding: 0.5px;
-                "
-              >
-                <a href="service3.html"
-                  ><h3 class="card-title">
-                    <b>Tech Contract Recruitment:</b>
-                  </h3></a
-                >
-                <p class="card-text">
-                  Recognizing the evolving nature of work, we offer specialized
-                  contract recruitment services tailored to the tech industry.
-                  Whether clients require short-term project support,
-                  specialized expertise, or flexible staffing solutions, we
-                  connect them with qualified contractors who meet their
-                  specific requirements, ensuring agility and scalability in
-                  their operations.
-                </p>
-              </div>
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-content">
+              <h3 class="service-title">ConnectPro</h3>
+              <p class="service-description">
+                ConnectPro specializes in sourcing professional business roles
+                for our clients and offers Executive Search, On-Demand Services,
+                and Embedded Talent Services.
+              </p>
+              <a href="service1.html" class="service-link">Learn More</a>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div
-              class="card"
-              style="width: 28rem; box-shadow: 5px 5px rgb(245, 234, 234)"
-            >
-              <img
-                src="uploads/sales4.jpg.png"
-                class="card-img-top"
-                alt="service image"
-                style="width: 28rem"
-              />
-              <div
-                class="card-body"
-                style="background-color: white; text-align: center"
-              >
-                <a href="service4.html"
-                  ><h3 class="card-title"><b>Remote Upskilling:</b></h3></a
-                >
-                <p class="card-text">
-                  In collaboration with leading tech education providers, we
-                  offer comprehensive remote upskilling programs designed to
-                  enhance the skills and expertise of tech professionals across
-                  Africa. Through customized training modules and hands-on
-                  learning experiences, we empower individuals to stay
-                  competitive in the rapidly evolving tech landscape.
-                </p>
-                <br />
-              </div>
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-content">
+              <h3 class="service-title">Training and Remote Upskilling</h3>
+              <p class="service-description">
+                In today's rapidly evolving tech landscape, the ability to work
+                remotely is becoming increasingly essential. However,
+                transitioning to remote work requires more than just access to a
+                computer and an internet connection. It necessitates a unique
+                skill set and mindset tailored to thrive in a virtual
+                environment. At Global Placers, we recognize the importance of
+                equipping both tech and non-tech staff with the necessary skills
+                and tools to excel in remote work scenarios.
+              </p>
+              <a href="service4.html" class="service-link">Learn More</a>
             </div>
           </div>
         </div>
-
-        <hr class="hr1" />
-
-        <div class="text-center">
-          <a
-            data-scroll
-            href="about-us.html"
-            class="btn btn-light btn-radius btn-brd"
-            >Learn more</a
-          >
-        </div>
-      </div>
-      <!-- end container -->
+      </section>
     </div>
     <!-- end section -->
 

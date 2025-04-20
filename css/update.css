@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.box_alignment{
+  display: flex;
+  align-items: center;
+}
+
 .category-card {
   background-color: white;
   padding: 30px 20px;
@@ -421,5 +426,9 @@
   .service-item {
     width: 100%;
     max-width: 300px;
+  }
+
+  .box_alignment{
+    flex-direction: column;
   }
 }

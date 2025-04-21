@@ -447,6 +447,13 @@
   color: #d22530;
 }
 
+.email_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
 @media (max-width: 992px) {
   .process-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -537,5 +544,8 @@
   }
   .service-content {
     padding: 25px 20px;
+  }
+  .email_wrapper{
+    flex-direction: column;
   }
 }
